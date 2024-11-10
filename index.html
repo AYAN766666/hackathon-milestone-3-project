@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic & Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create and Edit Your Resume</h1>
+        
+        <!-- Form to capture user input -->
+        <form id="resumeForm">
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+            </div>
+            
+            <div class="form-section">
+                <h3>Education</h3>
+                <input type="text" id="education" placeholder="Your Education" required>
+            </div>
+
+            <div class="form-section">
+                <h3>Work Experience</h3>
+                <input type="text" id="work" placeholder="Your Work Experience" required>
+            </div>
+
+            <div class="form-section">
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="Your Skills (comma-separated)" required>
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Preview with Editable Sections -->
+        <div id="resume" class="resume">
+            <h2>My Resume</h2>
+            <p id="resumeName" contenteditable="true">Name:</p>
+            <p id="resumeEmail" contenteditable="true">Email:</p>
+            <p id="resumePhone" contenteditable="true">Phone:</p>
+            <div id="resumeEducation" contenteditable="true">Education:</div>
+            <div id="resumeWork" contenteditable="true">Work Experience:</div>
+            <div id="resumeSkills" contenteditable="true">Skills:</div>
+        </div>
+    </div>
+
+    <script  src="script.js"></script> 
+
+</body>
+</html>
+
+
+
